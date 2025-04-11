@@ -1,5 +1,4 @@
-group 'com.auwx.umeng_analytics_with_push'
-version '1.0-SNAPSHOT'
+
 
 buildscript {
     ext.kotlin_version = '1.8.22'
@@ -19,17 +18,25 @@ plugins {
     id "kotlin-android"
 }
 
-
+group 'com.auwx.umeng_analytics_with_push'
+version '1.0-SNAPSHOT'
 android {
     compileSdkVersion 34
-
+    namespace "com.auwx.umeng_analytics_with_push"
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
     defaultConfig {
         minSdkVersion 21
     }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
 
+    kotlinOptions {
+        jvmTarget = "1.8"  // 确保 Kotlin 编译目标与 Java 一致
+    }
     buildTypes {
         release {
             consumerProguardFiles 'proguard-rules.pro'
