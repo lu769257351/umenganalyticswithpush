@@ -1,36 +1,14 @@
 group 'com.auwx.umeng_analytics_with_push'
 version '1.0-SNAPSHOT'
 
-//buildscript {
-//    ext.kotlin_version = '1.6.10'
-//    repositories {
-//        google()
-//        mavenCentral()
-//        maven { url 'https://developer.huawei.com/repo/' }
-//    }
-//
-//    dependencies {
-//        classpath 'com.android.tools.build:gradle:4.2.0'
-//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-//    }
-//}
 
-//rootProject.allprojects {
-//    repositories {
-//        google()
-//        mavenCentral()
-//        maven { url 'https://developer.huawei.com/repo/' }
-//        maven { url 'https://repo1.maven.org/maven2/' }
-//    }
-//}
 plugins {
     id "com.android.library"
     id "kotlin-android"
 //    id "app_plugin_loader"  // 新增这行
 //    id "org.jetbrains.kotlin.kapt"
 }
-//apply plugin: 'com.android.library'
-//apply plugin: 'kotlin-android'
+
 
 android {
     compileSdkVersion 34
