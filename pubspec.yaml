@@ -5,7 +5,7 @@ version: 1.0.0
 homepage: https://github.com/lu769257351/umenganalyticswithpush/tree/master
 
 environment:
-  sdk: 3.7.0
+  sdk: '>=3.7.2 <4.0.0'
   flutter: ">=1.20.0"
 
 dependencies:
